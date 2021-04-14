@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda9a2e5a4b05f6498a772ae7134f353, type: 3}
+  m_Name: CUFact4
+  m_EditorClassIdentifier: 
+  factNum: 4
+  factInfo: The CU Student Government has three branches; executive, legislative,
+    and judicial. The organization has a $36.6 million budget from the University
+    Administration.
+  factImage: {fileID: 21300000, guid: c051ca1e7bd0df946a58b7d34b5b8cb7, type: 3}

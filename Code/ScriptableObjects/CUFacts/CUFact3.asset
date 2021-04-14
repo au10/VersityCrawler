@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda9a2e5a4b05f6498a772ae7134f353, type: 3}
+  m_Name: CUFact3
+  m_EditorClassIdentifier: 
+  factNum: 3
+  factInfo: CU's architecture was designed by Charles Krauder. Krauder chose the
+    architecture named Tuscan Vernacular Revival. Krauder designed Old Main in 1876
+    and Macky Auditorium in 1923.
+  factImage: {fileID: 21300000, guid: 66796668e68eb684c9333d3e9caa7ba5, type: 3}

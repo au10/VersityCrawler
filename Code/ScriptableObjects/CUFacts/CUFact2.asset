@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda9a2e5a4b05f6498a772ae7134f353, type: 3}
+  m_Name: CUFact2
+  m_EditorClassIdentifier: 
+  factNum: 2
+  factInfo: CU has 17 varsity sports in the Pac-12 conference. The buffs have won
+    28 national championships! 20 in skiing, 7 in cross country, and 1 in football.
+    They just recently started a esports program in 2015!
+  factImage: {fileID: 21300000, guid: 94bfc2fddf76e1244a830d8300e53c3b, type: 3}
