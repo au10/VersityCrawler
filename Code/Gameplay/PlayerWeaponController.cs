@@ -24,6 +24,10 @@ public class PlayerWeaponController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    /// <summary>
+    /// When player has a weapon equipped and it touching an enemy, then
+    /// knockback the enemy and hurt the enemy based on the weapons attack stats
+    /// </summary>
     private void Update()
     {
         if (drankStrengthPotion)
@@ -78,6 +82,10 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Checks when enemy is in range
+    /// </summary>
+    /// <param name="collision">the enemy collider</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<IEnemy>() != null)
@@ -87,6 +95,10 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called when enemy is not touching player
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (enemyInRange != null && enemyInRange == collision.GetComponent<Enemy>())
@@ -95,6 +107,10 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Equip weapon to attack enemies
+    /// </summary>
+    /// <param name="weaponToEquip">the weapon to equip</param>
     public void EquipWeapon(Weapon weaponToEquip)
     {
         if (equippedWeapon != null)
@@ -105,6 +121,10 @@ public class PlayerWeaponController : MonoBehaviour
         equippedWeapon = weaponToEquip;
     }
 
+    /// <summary>
+    /// Attack the object if it has the enemy interface
+    /// </summary>
+    /// <param name="enemy">the enemy interface</param>
     public void PerformAttack(IEnemy enemy)
     {
         if (enemy == null)

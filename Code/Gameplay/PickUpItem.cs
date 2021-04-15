@@ -25,6 +25,11 @@ public class PickUpItem : MonoBehaviour
     }
 
     // Update is called once per frame
+    /// <summary>
+    /// This method checks to see if the player is colliding with a item. If it does, then determine if
+    /// the item is a weapon or a potion. If it's a potion, check to see what type of potion it is and
+    /// effect the player's stats
+    /// </summary>
     void Update()
     {
         if (selfCollider.IsTouching(playerWeapon.GetComponent<BoxCollider2D>())) {

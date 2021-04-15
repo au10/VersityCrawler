@@ -25,6 +25,15 @@ public class HTTPCOnnector : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// This method creates a client side POST request that is sent to the HTTP server located on
+    /// Heroku. It converts the json to bytes and then sends it to the server. The JSON is converted to bytes so that
+    /// the server language (Python) can translate it. If the server sends the correct message, the player can start the game.
+    /// If not, then it prompts the player with a safe error message
+    /// </summary>
+    /// <param name="url">the url to the HTTP server</param>
+    /// <param name="json">the json file to send to the server</param>
+    /// <returns>the web request</returns>
     public IEnumerator PostRequest(string url, string json)
     {
         var uwr = new UnityWebRequest(url, "POST");

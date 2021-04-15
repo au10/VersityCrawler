@@ -48,6 +48,10 @@ public class PlayerData : MonoBehaviour
         PlayerHealth = MAX_HEALTH;
     }
 
+    /// <summary>
+    /// Method called when the player takes damage. Calls animations depending on the player's health
+    /// </summary>
+    /// <param name="damage">amount of damage taken</param>
     public void TakeDamage(short damage)
     {
         if (Mathf.Abs(Time.time - TimeSinceLastHit) >= 1f)
@@ -81,6 +85,10 @@ public class PlayerData : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Flashes red when hit
+    /// </summary>
+    /// <returns>Wait for half a second for fluidity of animation</returns>
     public IEnumerator ShowDamageColor()
     {
         GetComponent<SpriteRenderer>().color = Color.Lerp(GetComponent<SpriteRenderer>().color, Color.red, 1f);
@@ -88,6 +96,11 @@ public class PlayerData : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.Lerp(GetComponent<SpriteRenderer>().color, Color.white, 1f);
     }
 
+    /// <summary>
+    /// Called when drinking a health potion
+    /// </summary>
+    /// <param name="num">amount of health to add back</param>
+    /// <returns>new health value</returns>
     public short AddHealth(short num)
     {
         playerHealth += num;
@@ -101,6 +114,7 @@ public class PlayerData : MonoBehaviour
 }
 
 [Serializable]
+//Class used to create the JSON to send when logging into HTTP server 
 public class PlayerLogin
 {
     public string username;

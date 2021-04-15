@@ -16,16 +16,25 @@ public class ConnectToWebsite : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Opens the registration HTML page that is located on the Heroku server when called.
+    /// </summary>
     public void Registration()
     {
         Application.OpenURL("http://cheapdell.ddns.net:25567/static/registration/index.html");
     }
 
+    /// <summary>
+    /// Opens the leaderboard HTML page that is located on the Heroku server when called.
+    /// </summary>
     public void Leaderboard()
     {
         Application.OpenURL("http://cheapdell.ddns.net:25567/static/leaderboard/index.html");
     }
 
+    /// <summary>
+    /// Opens the leaderboard HTML page on the Heroku server and ends the game process.
+    /// </summary>
     public void EndGameAndHeadToLeaderboard()
     {
         Application.OpenURL("http://cheapdell.ddns.net:25567/static/leaderboard/index.html");
